@@ -1,0 +1,425 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body,  h1, h2, p, ul, li, a {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+
+/*info-bg*/
+.info-bg {
+	width: 100%;
+	background-color: #122ab2;
+	color: #fff;
+	position: fixed;
+}
+.info-bg a {
+	color: #fff;
+}
+
+.infos {
+	max-width: 960px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.infos p, .infos a {
+	margin: 0 10px 10px 10px;
+}
+
+/* menu */
+.menu-bg {
+	background-color: #2c70ff;
+	position: fixed;
+	width: 100%;
+	top: 40px;
+}
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu a {
+	color: #fff;
+}
+.menu-logo a {
+	font-size: 2.25em;
+	font-weight: bold;
+	margin: 0 10px;
+}
+.menu-nav ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-nav a {
+	font-size: 1.25em;
+	padding: 10px;
+	display: block;
+}
+
+/*introdução*/ 
+.introducao {
+	max-width: 960px;
+	font-size: 3em;
+	padding: 70px 0;
+	margin: 0 auto;
+	border-bottom: 2px solid #2c70ff;
+	padding-top: 200px;
+}
+
+/*sobre*/
+.sobre {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 150px 0;
+	border-bottom: 2px solid #2c70ff;
+
+}
+.sobre-info {
+	max-width: 480px;
+	margin-right: 20px;
+	margin: 0 auto;
+}
+
+.sobre-info h1 {
+	font-size: 3em;
+	padding-bottom: 50px;
+}
+.sobre-info p {
+	font-size: 1.25em;
+	padding-bottom: 40px;
+	line-height: 1.75em;
+	color: #7c7c7c;
+}
+.sobre-imagem {
+	max-width: 460px;
+	margin: 0 auto;
+}
+
+/*produtos*/
+.produtos {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 150px 0;
+}
+.produtos h1 {
+	font-size: 3em;
+	padding-bottom: 80px;
+}
+.produtos-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+.produtos-item {
+	width: 300px;
+	margin-right: 20px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.produtos-item h2 {
+	padding: 70px 0;
+	color: #7c7c7c;
+	font-size: 3em;
+	padding-left: 30px;
+
+}
+.purple {
+	border-top: 8px solid #ae81ff;
+	height: 400px;
+	margin-top: 100px;
+
+}
+.pink {
+	border-top: 8px solid #f9265e;
+	height: 500px;
+}
+.blue {
+	border-top: 8px solid #66d9eb;
+	height: 460px;
+	margin-top: 50px;
+}
+
+/*preços*/
+
+.preco {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	background-color: #f7f7f7;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 120px 0;
+	
+}
+.preco-item {
+	display: flex;
+	flex-wrap: wrap;
+	width: 320px;
+	border: 4px solid #fff;
+	text-align: center;
+	padding: 40px;
+	margin-bottom: 30px;
+}
+.preco-item h2 {
+	font-size: 3em;
+	color: #a4a4a4;
+	margin-bottom: 20px;
+}
+.preco-item h2::after,.preco-item span::after {
+	content: '';
+	display: block;
+	width: 260px;
+	height: 4px;
+	background-color: #fff;
+	margin: 20px auto;
+}
+.preco-item span {
+	font-size: 3em;
+}
+.preco-item ul li {
+	font-size: 1.25em;
+	line-height: 1.87em;
+	text-align: left;
+	padding-bottom: 20px;
+
+}
+.preco-item ul li::after {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: #2c70ff; 
+	border-radius: 50%;
+	margin-left: 250px;
+	margin-top: -15px;
+}
+.btn-preco-item {
+	display: block;
+	max-width: 260px;
+	height: 70px;
+	line-height: 20px;
+	padding: 20px;
+	border: 4px solid #222222;
+	font-size: 2.25em;
+	margin-top: 40px !important;
+	color: #222;
+	text-transform: uppercase;
+	transition: all ease 1s;
+	margin: 0 auto;
+}
+.btn-preco-item:hover {
+	background-color: #222;
+	color: #fff;
+	transition: all ease 1s;
+}
+
+/*qualidade*/
+
+.qualidade {
+	max-width: 960px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 60px auto;
+}
+.qualidade-item {
+	/*width: 300px;*/
+	flex: 1 1 300px;
+	flex-wrap: wrap;
+	margin-right: 20px;
+	margin-bottom: 80px;
+}
+.qualidade-item h2 {
+	font-size: 2.25em;
+	color: #a4a4a4;
+	padding-bottom: 30px;
+}
+.qualidade-item p {
+	font-size: 1.25em;
+	line-height: 1.75em;
+	color: #7c7c7c;
+}
+h2.purple-border {
+	border-left: 8px solid #ae81ff;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+.pink-border {
+	border-left: 8px solid #f9265e;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+.blue-border {
+	border-left: 8px solid #66d9eb;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+
+/*contatos (newsletter)*/
+
+.contatos {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f7f7f7;
+	padding: 60px calc((100% - 960px)/2);
+}
+.contatos-info {
+	flex: 1 1 270px;
+	margin: 0 10px;
+}
+.contatos-info h1 {
+	font-size: 3em;
+	color: #a4a4a4;
+}
+.contatos-info p {
+	font-size: 1.25em;
+	font-style: italic;
+	color: #7c7c7c;
+	max-width: 230px;
+	margin-bottom: 10px;
+	
+}
+.contatos-form {
+	flex: 2 1 260px;
+	flex-wrap: wrap;
+	display: flex;
+	margin: 0 10px;
+	align-self: center;
+}
+.contatos-form input{
+	flex: 3 1 200px;
+	font-size: 1.25em;
+	font-style: italic;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	color: #7c7c7c;
+	border: 3px solid #2c70ff;
+	background: transparent;
+	padding: 10px;
+	margin: 0;
+
+}
+
+.contatos-form button {
+	align-items: center;
+	width: 190px;
+	height: 70px;
+	padding: 10px;
+	background-color: #2c70ff;
+	color: #fff;
+	border:none;
+	font-size: 2.25em;
+	cursor: pointer;
+	transition: all ease 1s;
+}
+.contatos-form button:hover {
+	background-color: #fff;
+	border: 3px solid #2c70ff;
+	color: #2c70ff;
+	transition: all ease 1s;
+}
+
+.footer {
+	height: 220px;
+	display: flex;
+	background-color: #2c70ff;
+}
+.footer p{
+	flex: 1;
+	align-self: center;
+	text-align: center;
+	font-size: 2.25em;
+	color: #122ab2;
+}
+
+/*menu mobile*/
+
+.menu_mobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	margin-right: 20px;
+}
+.mmobile {
+	height: 4px;
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+	.info-bg {
+		height: 80px;
+	}
+	.menu-bg {
+		top: 80px;
+
+	}
+	.introducao {
+		padding-left: 10px;
+		padding-top: 250px;
+		font-size: 2.5em;
+	}
+	.sobre,
+	.produtos,
+	.preco,
+	.qualidade,
+	.contatos
+	{
+		padding: 10px;
+		padding-top: 250px;
+	}
+	.menu_mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.menu-nav ul {
+		flex-direction: column;
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background-color: #2c70ff;
+	}
+	header {
+		height: 120px;
+	}
+}
